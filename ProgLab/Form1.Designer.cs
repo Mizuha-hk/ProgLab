@@ -53,24 +53,26 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.ExecutionButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.SpriteList = new System.Windows.Forms.ListView();
+            this.DebugPannel = new System.Windows.Forms.Panel();
+            this.ControlPannel = new System.Windows.Forms.Panel();
+            this.Editer = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.FileViewer = new System.Windows.Forms.TreeView();
             this.BottomToolStrip = new System.Windows.Forms.ToolStrip();
             this.LoadProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.PicturesURL = new System.Windows.Forms.ToolStripTextBox();
-            this.Editer = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.ControlPannel = new System.Windows.Forms.Panel();
-            this.DebugPannel = new System.Windows.Forms.Panel();
-            this.SpriteList = new System.Windows.Forms.ListView();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.testObject = new System.Windows.Forms.Panel();
             this.MenuBar.SuspendLayout();
             this.TopToolStrip.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
-            this.BottomToolStrip.SuspendLayout();
+            this.ControlPannel.SuspendLayout();
             this.Editer.SuspendLayout();
+            this.BottomToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuBar
@@ -281,6 +283,69 @@
             this.toolStripContainer1.Text = "toolStripContainer1";
             this.toolStripContainer1.TopToolStripPanelVisible = false;
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(1103, 28);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(480, 300);
+            this.panel1.TabIndex = 4;
+            // 
+            // SpriteList
+            // 
+            this.SpriteList.HideSelection = false;
+            this.SpriteList.Location = new System.Drawing.Point(1103, 334);
+            this.SpriteList.Name = "SpriteList";
+            this.SpriteList.Size = new System.Drawing.Size(486, 426);
+            this.SpriteList.TabIndex = 0;
+            this.SpriteList.UseCompatibleStateImageBehavior = false;
+            // 
+            // DebugPannel
+            // 
+            this.DebugPannel.Location = new System.Drawing.Point(0, 596);
+            this.DebugPannel.Name = "DebugPannel";
+            this.DebugPannel.Size = new System.Drawing.Size(1121, 164);
+            this.DebugPannel.TabIndex = 0;
+            // 
+            // ControlPannel
+            // 
+            this.ControlPannel.AutoScroll = true;
+            this.ControlPannel.Controls.Add(this.testObject);
+            this.ControlPannel.Location = new System.Drawing.Point(206, 28);
+            this.ControlPannel.Name = "ControlPannel";
+            this.ControlPannel.Size = new System.Drawing.Size(304, 562);
+            this.ControlPannel.TabIndex = 3;
+            // 
+            // Editer
+            // 
+            this.Editer.Controls.Add(this.tabPage1);
+            this.Editer.Controls.Add(this.tabPage2);
+            this.Editer.Location = new System.Drawing.Point(516, 3);
+            this.Editer.Multiline = true;
+            this.Editer.Name = "Editer";
+            this.Editer.SelectedIndex = 0;
+            this.Editer.Size = new System.Drawing.Size(581, 587);
+            this.Editer.TabIndex = 2;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(573, 558);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "File1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(573, 558);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "File2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // FileViewer
             // 
             this.FileViewer.BackColor = System.Drawing.SystemColors.WindowFrame;
@@ -320,67 +385,19 @@
             this.PicturesURL.Size = new System.Drawing.Size(300, 31);
             this.PicturesURL.Text = "Using This Images: https://icons8.com";
             // 
-            // Editer
+            // testObject
             // 
-            this.Editer.Controls.Add(this.tabPage1);
-            this.Editer.Controls.Add(this.tabPage2);
-            this.Editer.Location = new System.Drawing.Point(516, 3);
-            this.Editer.Multiline = true;
-            this.Editer.Name = "Editer";
-            this.Editer.SelectedIndex = 0;
-            this.Editer.Size = new System.Drawing.Size(581, 587);
-            this.Editer.TabIndex = 2;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(573, 558);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "File1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(573, 558);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "File2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // ControlPannel
-            // 
-            this.ControlPannel.AutoScroll = true;
-            this.ControlPannel.Location = new System.Drawing.Point(206, 28);
-            this.ControlPannel.Name = "ControlPannel";
-            this.ControlPannel.Size = new System.Drawing.Size(304, 562);
-            this.ControlPannel.TabIndex = 3;
-            // 
-            // DebugPannel
-            // 
-            this.DebugPannel.Location = new System.Drawing.Point(0, 596);
-            this.DebugPannel.Name = "DebugPannel";
-            this.DebugPannel.Size = new System.Drawing.Size(1121, 164);
-            this.DebugPannel.TabIndex = 0;
-            // 
-            // SpriteList
-            // 
-            this.SpriteList.HideSelection = false;
-            this.SpriteList.Location = new System.Drawing.Point(1103, 334);
-            this.SpriteList.Name = "SpriteList";
-            this.SpriteList.Size = new System.Drawing.Size(486, 426);
-            this.SpriteList.TabIndex = 0;
-            this.SpriteList.UseCompatibleStateImageBehavior = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(1103, 28);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(480, 300);
-            this.panel1.TabIndex = 4;
+            this.testObject.AllowDrop = true;
+            this.testObject.BackColor = System.Drawing.Color.Red;
+            this.testObject.Location = new System.Drawing.Point(3, 3);
+            this.testObject.Name = "testObject";
+            this.testObject.Size = new System.Drawing.Size(155, 98);
+            this.testObject.TabIndex = 5;
+            this.testObject.DragDrop += new System.Windows.Forms.DragEventHandler(this.testObject_DragDrop);
+            this.testObject.DragEnter += new System.Windows.Forms.DragEventHandler(this.testObject_DragEnter);
+            this.testObject.DragOver += new System.Windows.Forms.DragEventHandler(this.testObject_DragOver);
+            this.testObject.MouseDown += new System.Windows.Forms.MouseEventHandler(this.testObject_MouseDown);
+            this.testObject.MouseMove += new System.Windows.Forms.MouseEventHandler(this.testObject_MouseMove);
             // 
             // MainWindow
             // 
@@ -404,9 +421,10 @@
             this.toolStripContainer1.ContentPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
+            this.ControlPannel.ResumeLayout(false);
+            this.Editer.ResumeLayout(false);
             this.BottomToolStrip.ResumeLayout(false);
             this.BottomToolStrip.PerformLayout();
-            this.Editer.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,6 +468,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ListView SpriteList;
+        private System.Windows.Forms.Panel testObject;
     }
 }
 
